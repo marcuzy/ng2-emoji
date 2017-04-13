@@ -38,7 +38,7 @@ import { Ng2EmojiModule } from 'ng2-emoji';
     BrowserModule,
 
     // Include the awesome
-    Ng2EmojiModule
+    Ng2EmojiModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
