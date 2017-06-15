@@ -10,7 +10,7 @@ ROLLUP="node node_modules/.bin/rollup"
 $NGC -p src/tsconfig.es5.json
 
 # Run rollup to generate dist directory
-$ROLLUP build/index.js -o dist/index.js
+$ROLLUP build/index.js -f cjs -o dist/index.js
 
 # Copy all files from build to dist, except for JavaScript files
 rsync -a --exclude=*.js build/ dist
